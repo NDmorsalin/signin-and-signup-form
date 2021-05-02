@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up from</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="wrapper">
+            <div class="container signin">
+                <h1 class="logo">Logo</h1>
+                <form action="">
+                    <div class="input_items">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <label for="email"><i class="fas fa-envelope    "></i></label>
+                    </div>
+                    <div class="input_items">
+                        <input type="password" name="password" id="password" placeholder="password">
+                        <label for="password"><i class="fas fa-key    "></i></label>
+                    </div>
+                    <a href="#" class="forgot"> Forgot password?</a>
+                    <input type="submit" value="Login" class="submit-btn login-btn">
+                </form>
+               
+            </div>
+            <div class="social">
+                <div class="social-icon googleplus"><a href=""><i class="fab fa-google-plus-g    "></i></a></i></div>
+                <div class="social-icon facebook"><a href=""><i class="fab fa-facebook-f    "></i></a></div>
+                <div class="social-icon twitter"><a href=""><i class="fab fa-twitter    "></i></a></div>
+            </div>
+            <div class="container signup">
+                <h1 class="logo">Logo</h1>
+                <form action="">
+                    <div class="input_items">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <label for="email"><i class="fas fa-envelope    "></i></label>
+                    </div>
+                    <div class="input_items">
+                        <input type="password" name="password" id="password" placeholder="password">
+                        <label for="password"><i class="fas fa-key    "></i></label>
+                    </div>
+                    <div class="input_items">
+                        <input type="password" name="password" id="password" placeholder="password">
+                        <label for="password"><i class="fas fa-key    "></i></label>
+                    </div>
+                    <div class="input_items">
+                        <input type="password" name="password" id="password" placeholder="password">
+                        <label for="password"><i class="fas fa-key    "></i></label>
+                    </div>
+
+                    <input type="submit" value="Login" class="submit-btn signup-btn">
+                </form>
+                
+            </div>
+            <div class="arrow sup-arrow"><i class="fas fa-arrow-down    "></i></div>
+            <div class="arrow log-arrow"><i class="fas fa-arrow-down    "></i></div>
+        </div>
+    </div>
+    <script>
+        const log = document.querySelector('.log-arrow');
+        const sup = document.querySelector('.sup-arrow');
+        console.log(log);
+        log.addEventListener('click', function (e) {
+            log.parentElement.classList.toggle('active')
+        });
+        sup.addEventListener('click', function (e) {
+            sup.parentElement.classList.toggle('active')
+        });
+    </script>
+</body>
+
+</html>
